@@ -1,4 +1,5 @@
 {{ define "main" }}
+
 <body style="background: #ffffff;">
 
 <div class="mj-container" style="background-color:#fe7e00ff;">
@@ -12,7 +13,7 @@
   <tbody>
     <tr>
       <td>
-        <div style="margin:0px auto;max-width:600px;">
+        <div style="margin:0px auto;max-width:500px;">
           <table role="presentation" cellpadding="0" cellspacing="0" style="font-size:0px;width:100%;" align="center" border="0">
             <tbody>
               <tr>
@@ -42,6 +43,14 @@
                         </tr>
                       </tbody>
                     </table>
+
+                        <center><h5>{{.Params.newsletterhead}}</h5></center>
+                        <ul class="menu_horizontal center">
+                          {{ range .Site.Params.social}}
+                          <li><a href="{{ .url }}"><i class="{{ .icon }}"></i></a></li>
+                          {{ end }}
+                        </ul>
+
                   </div>
                   <!--[if mso | IE]>
                   </td></tr></table>
@@ -55,16 +64,6 @@
     </tr>
   </tbody>
 </table>
-<div class="container">
-  <div class="row center">
-    <center><h5>{{.Params.newsletterhead}}</h5></center>
-    <ul class="menu_horizontal center">
-      {{ range .Site.Params.social}}
-      <li><a href="{{ .url }}"><i class="{{ .icon }}"></i></a></li>
-      {{ end }}
-    </ul>
-</div>
-</div>
 </div>
 
 
