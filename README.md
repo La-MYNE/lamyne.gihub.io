@@ -1,2 +1,3 @@
 # lamyne.gihub.io
-Test site pour la MYNE
+
+Ce repository sert à tester différentes variante du site de la MYNE en vue de son évolution. 
